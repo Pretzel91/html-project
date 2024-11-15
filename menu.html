@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant's Menu</title>
+
+    <link rel="stylesheet" href="menu.css"/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="makkuse.jpg"></div>
+            <ul class="links">
+                <li><a href="menu.html">Home</a></li>
+                <li><a href="newarimenu.jpg">Menu</a></li>
+                <li><a href="lunchmenu.jpg">Lunch</a></li>
+                <li><a href="reservation.html">Reserve a Table</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+            <a href="#" class="action_btn"></a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="menu.html">Home</a></li>
+            <li><a href="newarimenu.jpg">Menu</a></li>
+            <li><a href="lunchmenu.jpg">Lunch</a></li>
+            <li><a href="reservation.html">Reserve a Table</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="#" class="action_btn"></a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+  
+    </div>
+</body>
+
+<footer>
+    <section class="footer">
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <p>Email:Info@example.com</p>
+            <p>Phone:+358 123456789</p>
+            <p>Address:Your street 123 street</p>
+        </div>
+
+       
+        <div class="socialIcons">
+            <div>Follow Us</div>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        
+
+    </div>
+</footer>
+</html> 

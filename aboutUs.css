@@ -1,0 +1,55 @@
+* {
+    background-color: beige;
+}
+
+body .aboutUs {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+
+}
+
+.body .aboutUs .h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+h3{
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media(max-width: 992px) {
+    body .aboutUs,
+    img {
+        display: block;
+    }
+}
+@media (max-width: 576px) {
+    body .aboutUs,
+    img {
+        left: 2rem;
+        width: unset;
+    }
+}
